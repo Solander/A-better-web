@@ -1,0 +1,28 @@
+.ab_input_container {
+  position: relative;
+  margin: 40px 0 0;
+}
+.ab_input {
+  font-size: 1.5em;
+  padding: 5px;
+}
+.ab_input_container label {
+  position: absolute;
+  transition: all 0.5s;
+  top: -40px;
+  left: 0px;
+  font-size: 1em;
+  transform: translateY(100%);
+}
+.ab_input[value=""] + label {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  font-size: 1.5em;
+}
+.ab_input:focus + label {
+  top: -40px;;
+  left: 0px;
+  font-size: 1em;
+  transform: translateY(100%);
+}
