@@ -3,44 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="ab_input.css">
     <style media="screen">
       body {
         padding: 30px;
       }
-      .ab_input {
-        position: relative;
-        margin: 40px 0 0;
-        /*padding: 20px 0 0;*/
-      }
-      .ab_input input {
-        font-size: 1.5em;
-        padding: 5px;
-      }
-      .ab_input input >>> .inner-editor {
-        background: #f00;
-        color: #fff;
-      }
-      .ab_input label {
-        position: absolute;
-        transition: all 0.5s;
-        top: -40px;;
-        left: 0px;
-        font-size: 1em;
-        transform: translateY(100%);
-      }
-      .ab_input input[value=""] + label {
-        top: 50%;
-        transform: translateY(-50%);
-        left: 10px;
-        font-size: 1.5em;
-      }
-      .ab_input input:focus + label {
-        top: -40px;;
-        left: 0px;
-        font-size: 1em;
-        transform: translateY(100%);
-      }
+
       /*.ab_input input:focus::-webkit-input-placeholder {
         position: absolute;
         color: #000;
@@ -49,13 +19,26 @@
     </style>
   </head>
   <body>
-    <div class="ab_input">
+    <!-- <div class="ab_input">
       <input type="text" placeholder="Name" name="">
     </div>
     <div class="ab_input">
       <label for="address_input">Address</label>
       <input type="text" name="" id="adress_input" value>
-    </div>
-    <script type="text/javascript" src="abinput.js"></script>
+    </div> -->
+
+
+
+
+
+    <input type="text" class="ab_input" placeholder="Namn">
+    <input type="text" class="ab_input" placeholder="Adress">
+
+
+
+
+
+
+    <script type="text/javascript" src="lib/ab_input.js"></script>
   </body>
 </html>
